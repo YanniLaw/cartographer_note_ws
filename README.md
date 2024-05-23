@@ -1,5 +1,7 @@
 # cartographer 超详细注释代码
 
+**基于lixiang开源注释，自己所做的一些笔记**
+
 ## 1 开源项目简介
 本项目对cartographer进行了逐行的注释，代码是基于2021.04.20日在cartographer官方github上下载的master的代码
 
@@ -66,27 +68,3 @@ vscode中推荐的插件有:
 
 ![pcd_map](src/cartographer/docs/pcd_map.png)
 
-## 5 逐行讲解源码的视频课程简介
-
-### 课程介绍
-Cartographer的代码庞大，逻辑复杂，包含大量的工程细节，对于初学者不太友好，学习理解代码十分困难，需要花费大量时间仍不得要领。
-
-而企业对激光SLAM从业者的要求越来越高，只会调包调参的人找工作越来越难，只有深入理解激光SLAM原理与代码实现，才具有核心竞争力。
-
-因此，计算机视觉life推出了源码解析课程《激光SLAM之Cartographer源码解析》，这是目前唯一一个逐行讲解Cartographer源码的课程！
-
-### 课程大纲
-![大纲](src/cartographer/docs/outline.jpg)
-
-如果图片刷不出来, 可以点击下方的链接去看更详细的介绍
-
-[课程的更加详细的介绍请点这里](https://mp.weixin.qq.com/s?__biz=MzIxOTczOTM4NA==&mid=2247536585&idx=1&sn=58c6c3ec4e2fc1a8d88117be7564ae34&chksm=97d4aa5ea0a32348716c3234ce490eff86f37d1b6008280bbf22a30299729e1a43c7a3733946&mpshare=1&scene=1&srcid=01120cyJyNtBlZP9wC3tUoq5&sharer_sharetime=1641970495681&sharer_shareid=e0bf4e1cc54f09628a44697dfe50325e&exportkey=AWd55O3LN11%2Fsc56%2B2CRwCY%3D&acctmode=0&pass_ticket=uLujlwBtSAwv8dNpZkb4fWl9VRpVMyKGcuwTIOQOo5VUyboRc5Dav30xVPim0Esf&wx_header=0#rd)
-
-
-### 课程咨询
-如果对这个课程感兴趣的同学可以扫描下方的名片进行课程咨询, 加的时候备注下 carto课程咨询
-
-![咨询](src/cartographer/docs/zixun.jpg)
-
-
-by lixiang

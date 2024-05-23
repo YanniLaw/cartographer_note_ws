@@ -3,3 +3,5 @@ devel/
 build_isolated/
 devel_isolated/
 install_isolated/
+.vscode/
+.catkin_workspace

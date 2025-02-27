@@ -34,7 +34,10 @@ proto::GridOptions2D CreateGridOptions2D(
     common::LuaParameterDictionary* const parameter_dictionary);
 
 enum class GridType { PROBABILITY_GRID, TSDF };
-
+/**
+ * @brief 这个才是真正存放栅格地图底层数据的类
+ * 
+ */
 class Grid2D : public GridInterface {
  public:
   Grid2D(const MapLimits& limits, float min_correspondence_cost,

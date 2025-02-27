@@ -102,7 +102,7 @@ CreateFastCorrelativeScanMatcherOptions2D(
  * 
  * @param[in] grid 传入的栅格地图
  * @param[in] limits 栅格地图的栅格数目
- * @param[in] width 不同分辨率下的栅格宽度
+ * @param[in] width 不同分辨率下的栅格宽度 1 << i (i ∈ [0, depth-1]，可以看成多分辨率金字塔从下往上的层数),同时也是滑窗的大小
  * @param[in] reusable_intermediate_grid 可重用的中间栅格地图
  */
 PrecomputationGrid2D::PrecomputationGrid2D(
@@ -128,6 +128,7 @@ PrecomputationGrid2D::PrecomputationGrid2D(
   for (int y = 0; y != limits.num_y_cells; ++y) {
     SlidingWindowMaximum current_values;
     // 获取 grid 的x坐标的索引: 首先获取 (0, y), 即行首栅格的概率值
+    // 由于栅格存储的是映射值，所以先转换成correspondence cost,再转换成probability
     current_values.AddValue(
         1.f - std::abs(grid.GetCorrespondenceCost(Eigen::Array2i(0, y))));
 
